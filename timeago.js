@@ -1,5 +1,15 @@
 // Define a function that takes a date as an argument
 // and returns a string that represents how long ago the date was
+
+/**
+ * @module
+ * @param {Date} date the date obj to check
+ * @returns {string} string with the amount of time ago
+ * @example
+ * `timeAgo(Date.now() - 60 * 5 * 1000);`
+ * //5 days ago
+ *
+ */
 export const timeAgo = (date) => {
   const seconds = Math.floor((new Date() - date) / 1000);
 
