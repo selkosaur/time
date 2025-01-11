@@ -42,8 +42,4 @@ export const timeAgo = (date) => {
   return Math.floor(seconds) + " seconds ago";
 };
 
-// at the time of writing this code, the date is 2022-12-28 16:14:00
-// you will see different results if you run this code at different time
-console.log(timeAgo(new Date("2019-01-29 00:00:00")));
-console.log(timeAgo(new Date("2022-10-24 19:00:00")));
-console.log(timeAgo(Date.now() - 60 * 5 * 1000));
+export default timeAgo;
